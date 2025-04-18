@@ -1,10 +1,11 @@
-/* Estilos generales */
+/* Estilos generales y reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos base del cuerpo de la página */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -12,7 +13,7 @@ body {
     background-color: #000000;
 }
 
-/* Header */
+/* Estilos del encabezado */
 header {
     position: fixed;
     width: 100%;
@@ -22,6 +23,7 @@ header {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Contenedor de navegación */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -30,6 +32,7 @@ header {
     margin: 0 auto;
 }
 
+/* Estilos del logo */
 .logo {
     display: flex;
     align-items: center;
@@ -39,6 +42,7 @@ header {
     height: 60px;
 }
 
+/* Estilos del menú de navegación */
 nav ul {
     display: flex;
     list-style: none;
@@ -56,6 +60,7 @@ nav a:hover {
     color: #00a8ff;
 }
 
+/* Estilos del botón de unirse */
 .join-now {
     background-color: #ffffff;
     color: #000000;
@@ -72,7 +77,7 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* Sección Hero */
+/* Estilos de la sección hero (principal) */
 .hero {
     position: relative;
     height: 100vh;
@@ -85,6 +90,7 @@ nav a:hover {
     overflow: hidden;
 }
 
+/* Efecto de gradiente en la sección hero */
 .hero::after {
     content: '';
     position: absolute;
@@ -96,6 +102,7 @@ nav a:hover {
     z-index: 1;
 }
 
+/* Contenedor del contenido hero */
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -103,6 +110,7 @@ nav a:hover {
     z-index: 2;
 }
 
+/* Estilos del título principal */
 .hero-content h1 {
     font-size: 4.5rem;
     font-weight: 900;
@@ -111,6 +119,7 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+/* Estilos del párrafo principal */
 .hero-content p {
     font-size: 1.2rem;
     max-width: 500px;
@@ -118,6 +127,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
+/* Estilos del botón de llamada a la acción */
 .get-started {
     background-color: #00a8ff;
     color: #ffffff;
@@ -136,6 +146,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+/* Estilos de los enlaces sociales */
 .social-links {
     display: flex;
     gap: 1.5rem;
@@ -151,7 +162,7 @@ nav a:hover {
     color: #00a8ff;
 }
 
-/* Estadísticas */
+/* Estilos de la sección de estadísticas */
 .stats {
     display: flex;
     justify-content: space-around;
@@ -161,6 +172,7 @@ nav a:hover {
     margin-top: -2px;
 }
 
+/* Estilos de cada ítem de estadística */
 .stat-item {
     text-align: center;
 }
@@ -177,7 +189,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* Sección del Formulario */
+/* Estilos de la sección del formulario */
 .form-section {
     padding: 4rem 2rem;
     background-color: #f8f9fa;
@@ -189,6 +201,7 @@ nav a:hover {
     color: #333;
 }
 
+/* Estilos del formulario de contacto */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -198,16 +211,19 @@ nav a:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Estilos de los grupos de formulario */
 .form-group {
     margin-bottom: 1.5rem;
 }
 
+/* Estilos de las etiquetas */
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
+/* Estilos de los campos de entrada */
 input, textarea, select {
     width: 100%;
     padding: 0.75rem;
@@ -216,12 +232,14 @@ input, textarea, select {
     font-size: 1rem;
 }
 
+/* Estilos de los campos de entrada al enfocar */
 input:focus, textarea:focus, select:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
+/* Estilos de los mensajes de error */
 .error-message {
     color: #dc3545;
     font-size: 0.875rem;
@@ -229,6 +247,7 @@ input:focus, textarea:focus, select:focus {
     display: none;
 }
 
+/* Estilos de los mensajes de éxito */
 .success-message {
     background-color: #28a745;
     color: white;
@@ -239,6 +258,7 @@ input:focus, textarea:focus, select:focus {
     display: none;
 }
 
+/* Estilos del botón de envío */
 .submit-btn {
     background-color: #007bff;
     color: white;
@@ -248,91 +268,96 @@ input:focus, textarea:focus, select:focus {
     cursor: pointer;
     font-size: 1rem;
     width: 100%;
-    transition: background-color 0.3s;
 }
 
+/* Estilos del botón de envío al pasar el mouse */
 .submit-btn:hover {
     background-color: #0056b3;
 }
 
-/* Footer */
+/* Estilos del pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 3rem 2rem 1rem;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 2rem;
 }
 
+/* Contenedor del contenido del pie de página */
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
 }
 
+/* Estilos de los títulos en el pie de página */
 .footer-section h3 {
+    color: #00a8ff;
     margin-bottom: 1rem;
 }
 
+/* Estilos de la sección inferior del pie de página */
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 2rem;
+    border-top: 1px solid #333;
 }
 
-/* Media Queries */
+/* Media queries para diseño responsive */
 @media screen and (max-width: 768px) {
+    /* Ajustes para tablets */
     header {
         padding: 1rem;
     }
-
+    
     nav ul {
-        display: none;
+        gap: 1rem;
     }
-
+    
     .hero-content h1 {
         font-size: 3rem;
     }
-
+    
     .stats {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 2rem;
     }
-
+    
     .stat-item {
-        width: 45%;
+        width: 100%;
     }
-
+    
     .form-section {
         padding: 2rem 1rem;
     }
-
+    
     .contact-form {
         padding: 1.5rem;
     }
-
+    
     .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 480px) {
+    /* Ajustes para móviles */
     .hero-content h1 {
         font-size: 2.5rem;
     }
-
-    .stat-item {
-        width: 100%;
+    
+    .stat-item h2 {
+        font-size: 2rem;
     }
-
+    
     input, textarea, select {
-        font-size: 16px; /* Evita el zoom en iOS */
+        padding: 0.5rem;
     }
 }
 
-/* Modal */
+/* Estilos del modal */
 .modal {
     display: none;
     position: fixed;
@@ -340,64 +365,66 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1100;
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
 }
 
+/* Clase para mostrar el modal */
 .modal.active {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Contenedor del contenido del modal */
 .modal-content {
-    background-color: #1a1a1a;
+    background-color: white;
     padding: 2rem;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 8px;
+    width: 90%;
     max-width: 500px;
     position: relative;
-    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+    color: #333;
 }
 
+/* Estilos del botón para cerrar el modal */
 .close-modal {
     position: absolute;
-    right: 1rem;
     top: 1rem;
+    right: 1rem;
     font-size: 1.5rem;
-    color: #ffffff;
     cursor: pointer;
-    transition: color 0.3s;
+    color: #666;
 }
 
 .close-modal:hover {
-    color: #00a8ff;
+    color: #333;
 }
 
-/* Tabs */
+/* Estilos de las pestañas de autenticación */
 .auth-tabs {
     display: flex;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #333;
+    border-bottom: 1px solid #ddd;
 }
 
+/* Estilos de los botones de pestaña */
 .tab-btn {
+    padding: 0.75rem 1.5rem;
     background: none;
     border: none;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
     cursor: pointer;
-    opacity: 0.7;
+    font-size: 1rem;
+    color: #666;
     transition: all 0.3s;
 }
 
 .tab-btn.active {
-    opacity: 1;
-    border-bottom: 2px solid #00a8ff;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
 }
 
-/* Formularios */
+/* Estilos de los formularios de autenticación */
 .auth-form {
     display: none;
 }
@@ -406,102 +433,106 @@ footer {
     display: block;
 }
 
+/* Estilos de los títulos de los formularios */
 .auth-form h2 {
-    margin-bottom: 1.5rem;
-    color: #ffffff;
     text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
 }
 
+/* Estilos de los grupos de formulario */
 .form-group {
     margin-bottom: 1.5rem;
 }
 
+/* Estilos de las etiquetas */
 label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #333;
 }
 
+/* Estilos de los campos de entrada */
 input {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #2a2a2a;
-    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-size: 1rem;
 }
 
+/* Estilos de los campos de entrada al enfocar */
 input:focus {
     outline: none;
-    border-color: #00a8ff;
-    box-shadow: 0 0 0 2px rgba(0, 168, 255, 0.2);
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
+/* Estilos de los mensajes de error */
 .error-message {
-    color: #ff4444;
+    color: #dc3545;
     font-size: 0.875rem;
     margin-top: 0.25rem;
     display: none;
 }
 
+/* Estilos de los mensajes de éxito */
 .success-message {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
     background-color: #28a745;
     color: white;
-    padding: 1rem 2rem;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    text-align: center;
     display: none;
-    z-index: 1200;
     animation: slideIn 0.3s ease-out;
 }
 
+/* Animación para los mensajes de éxito */
 @keyframes slideIn {
     from {
-        transform: translateX(100%);
+        transform: translateY(-20px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
+/* Estilos del botón de envío */
 .submit-btn {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #00a8ff;
-    color: #ffffff;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
     transition: all 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #0088cc;
+    background-color: #0056b3;
 }
 
-/* Media Queries */
+/* Media queries para diseño responsive del modal */
 @media screen and (max-width: 768px) {
     header {
         padding: 1rem;
     }
-
+    
     nav ul {
-        display: none;
+        gap: 1rem;
     }
-
+    
     .hero-content h1 {
         font-size: 3rem;
     }
-
+    
     .modal-content {
-        margin: 1rem;
+        width: 95%;
         padding: 1.5rem;
     }
 }
@@ -510,12 +541,11 @@ input:focus {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-
+    
     .auth-tabs {
         flex-direction: column;
-        gap: 0.5rem;
     }
-
+    
     .tab-btn {
         width: 100%;
         text-align: center;

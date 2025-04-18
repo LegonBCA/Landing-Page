@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const successMessage = document.getElementById('success-message');
 
     // Expresiones regulares para validación
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^\d{10}$/;
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Validación de formato de email
+    const phoneRegex = /^\d{10}$/; // Validación de formato de teléfono (10 dígitos)
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/; // Validación de contraseña (mínimo 8 caracteres, letras y números)
 
-    // Mostrar modal
+    // Función para mostrar el modal de autenticación
     function showModal(formType) {
         modal.classList.add('active');
         // Activar el tab correspondiente
         document.querySelector(`[data-tab="${formType}"]`).click();
     }
 
-    // Ocultar modal
+    // Función para ocultar el modal de autenticación
     function hideModal() {
         modal.classList.remove('active');
         // Resetear formularios
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === modal) hideModal();
     });
 
-    // Cambio de tabs
+    // Cambio de tabs (Login/Registro)
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             // Remover clase active de todos los tabs y forms
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Función para mostrar mensajes de error
+    // Función para mostrar mensajes de error en los campos del formulario
     function showError(input, message) {
         const errorElement = document.getElementById(`${input.id}-error`);
         errorElement.textContent = message;
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Validación en tiempo real para el teléfono
+    // Validación en tiempo real para el teléfono (solo permite números)
     document.getElementById('registerPhone').addEventListener('input', function(e) {
         this.value = this.value.replace(/[^0-9]/g, '');
     });
