@@ -5,9 +5,9 @@ Una landing page moderna y responsiva para un gimnasio, con sistema de autentica
 
 ## 🚀 Demo
 
-[![Demo FitGym]## 🚀 Demo:
+[![Demo FitGym]## 🚀 Demo: https://teclab.uct.cl/~benjamin.contreras/Proyectos/Landing-Page-main/
 
-https://teclab.uct.cl/~benjamin.contreras/
+
 
 ## 🚀 Características
 
